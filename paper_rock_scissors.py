@@ -5,6 +5,9 @@
 #use ceil (n/2) method to create best of n wins
 #use if/than statements to set the conditions
 #and output messages 
+#import random
+#import math
+
 import random
 import math
 
@@ -58,3 +61,5 @@ def play_best_of(n):
 
 if __name__ == '__main__':
     play_best_of(3) # 2
+
+

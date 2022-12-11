@@ -21,6 +21,7 @@ def desert():
         case _:
             print()
             print("You have entered incorrectly human,now you get nothing.")
+        
 
 desert()
 #Escape from program with leaving message.

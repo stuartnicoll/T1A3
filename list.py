@@ -41,8 +41,8 @@ def main_menu():
             clear_list()
         
         elif selection == "7":
-            sys.exit()
-
+            leave_list()
+            
         else:
             print("You have failed to make the right selection human!")
 #Create a variable called shopping list
@@ -83,4 +83,9 @@ def clear_list():
     print()
     print("The shopping list is now empty.")
 
-main_menu()
+def leave_list():
+    
+    print("You have decided that the list is complete")
+    
+    
+

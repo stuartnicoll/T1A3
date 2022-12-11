@@ -1,32 +1,30 @@
-#This is the main python file for assignment T1A3
+import random
+import math
 
-#Pseudo code
-#Section 1 The intro
-#make intro section which include read and write to text files.
-#import time 
-#import datetime
-#create intro function 
-#make time delay loop
-#make text read and write to input 
-#convert name to binary output
-#display todays date
+from intro import intro
 
-#Section 2 the shooping list part
-#Make a function to create shopping list called main menu
-#Make a set of conditional statements
-#Create a variable called shopping list
-#create a function for each selection to perform
+intro()
 
-#Section 3 the bonus paper rock scissors part
-#this is the bonus game section of the program
-#import random and math functions
-#make input choice for human 
-#and make computer choice random
-#use ceil (n/2) method to create best of n wins
-#use if/than statements to set the conditions
-#and output messages
+from list import main_menu
 
-#Section 4 the bonus match case
-#Choose your desert
-#Make match case function 
-#Escape from program with leaving message.
+main_menu()
+
+
+import random
+import math
+from paper_rock_scissors import play
+
+play()
+
+from desert import desert
+
+desert()
+
+
+
+
+
+
+
+
+
