@@ -34,6 +34,7 @@ for i in range(1):
         
     with open('intro_write.txt', 'r') as f:
         f_contents = f.read()
+        print() 
         print("Welcome "+f_contents+".")
         print()
         time.sleep(2)
