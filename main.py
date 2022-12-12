@@ -1,14 +1,16 @@
 
 
-
+print()
 from intro import intro
 
 intro()
 
 from list import main_menu
 
-main_menu()
+#main_menu()
 
+print("Would you like to play a game?")
+print()
 
 from paper_rock_scissors import play
 

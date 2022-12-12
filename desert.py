@@ -16,13 +16,13 @@ def desert():
 
         case "Green":
             print()
-            print("You have choosen poorly human! Soylent Green is people.....Soylent green is people!")
+            print("You have choosen poorly human! Soylent Green is people.....Soylent green is made from people!")
 
         case _:
             print()
             print("You have entered incorrectly human,now you get nothing.")
 
-            print("Until we meet again human! ")      
+    print("Until we meet again human! ")      
 #Escape from program with leaving message.
 
 
