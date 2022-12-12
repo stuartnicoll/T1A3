@@ -3,7 +3,7 @@
 #Create a variable called shopping list
 #create a function for each selection to perform
 
-import sys
+
 #Make a function to create shopping list called main menu
 def main_menu():
     while True:
@@ -41,8 +41,8 @@ def main_menu():
             clear_list()
         
         elif selection == "7":
-            leave_list()
-            
+            print("You are done with me human! ")
+
         else:
             print("You have failed to make the right selection human!")
 #Create a variable called shopping list
@@ -83,9 +83,6 @@ def clear_list():
     print()
     print("The shopping list is now empty.")
 
-def leave_list():
-    
-    print("You have decided that the list is complete")
-    
+main_menu()
     
 

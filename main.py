@@ -1,5 +1,5 @@
-import random
-import math
+
+
 
 from intro import intro
 
@@ -10,15 +10,18 @@ from list import main_menu
 main_menu()
 
 
-import random
-import math
 from paper_rock_scissors import play
 
 play()
 
+print()
+print("Thank you for playing a game with me human. You have earn't yourself a treat!")
+print()
+
 from desert import desert
 
-desert()
+print()
+print("Thank you human please come again.")
 
 
 

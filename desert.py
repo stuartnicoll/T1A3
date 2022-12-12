@@ -21,9 +21,9 @@ def desert():
         case _:
             print()
             print("You have entered incorrectly human,now you get nothing.")
-        
 
-desert()
+            print("Until we meet again human! ")      
 #Escape from program with leaving message.
-print()
-print("We are done here human. Until next time and good luck.")
+
+
+desert() 
