@@ -8,21 +8,21 @@ def desert():
     match desert_choice:
         case "yellow":
             print()
-            print("You have choosen a yummy treat human!")
+            print("You have choosen a yummy treat human!\n")
 
         case "blue":
             print()
-            print("Blue is the most delicious snack human.")
+            print("Blue is the most delicious snack human.\n")
 
         case "green":
             print()
-            print("You have choosen poorly human! Soylent Green is people.....Soylent green is made from people!")
+            print("You have choosen poorly human! Soylent Green is people.....Soylent green is made from people!\n")
 
         case _:
             print()
-            print("You have entered incorrectly human,now you get nothing.")
+            print("You have entered incorrectly human,now you get nothing.\n")
 
-    print("Until we meet again human! ")      
+    print("Until we meet again human!\n ")      
 #Escape from program with leaving message.
 
 

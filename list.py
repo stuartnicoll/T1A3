@@ -2,15 +2,15 @@
 #Make a set of conditional statements
 #Create a variable called shopping list
 #create a function for each selection to perform
-from os import system
+
 
 #Make a function to create shopping list called main menu
 def main_menu():
     while True:
         print()
-        print('''###Shopping List###
+        print('''Welcome to your shopping list!
 
-        Hello human what task would you like to perform?
+        Welcome back human what task would you like to perform?
 
         1.View the shopping list
         2.Add an item
@@ -43,7 +43,7 @@ def main_menu():
             clear_list()
         
         elif selection == "7":
-            system('clear')
+            #system('clear')
             print("You are done with me human!")
             break
 
@@ -87,6 +87,5 @@ def clear_list():
     print()
     print("The shopping list is now empty.")
 
-main_menu()
-    
+
 
