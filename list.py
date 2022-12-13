@@ -2,7 +2,7 @@
 #Make a set of conditional statements
 #Create a variable called shopping list
 #create a function for each selection to perform
-
+from os import system
 
 #Make a function to create shopping list called main menu
 def main_menu():
@@ -20,8 +20,10 @@ def main_menu():
         6.Remove all the contents
         7.Exit
         ''')
-        selection= input("Make your choice human: ")
+        selection = input("Make your choice human: ")
 #Make a set of conditional statements
+   
+
         if selection == "1":
             display_list()
         
@@ -41,7 +43,9 @@ def main_menu():
             clear_list()
         
         elif selection == "7":
-            print("You are done with me human! ")
+            system('clear')
+            print("You are done with me human!")
+            break
 
         else:
             print("You have failed to make the right selection human!")

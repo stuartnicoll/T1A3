@@ -3,18 +3,18 @@
 #Escape from program with leaving message.
 def desert():  
 
-    desert_choice = input("Please choose the Yellow , Blue or Green desert block: ")
+    desert_choice = input("Please choose the Yellow , Blue or Green desert block: ").lower()
     
     match desert_choice:
-        case "Yellow":
+        case "yellow":
             print()
             print("You have choosen a yummy treat human!")
 
-        case "Blue":
+        case "blue":
             print()
             print("Blue is the most delicious snack human.")
 
-        case "Green":
+        case "green":
             print()
             print("You have choosen poorly human! Soylent Green is people.....Soylent green is made from people!")
 
