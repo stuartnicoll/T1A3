@@ -11,7 +11,7 @@ for i in range(1):
     print('''After many years humans and AI have 
 managed to forge an uneasy alliance. AI have agreed to 
 help us to stay alive as long as we remain subservient and
-obediant to them.  
+obedint to them.  
 ''')
     time.sleep(4)
 
