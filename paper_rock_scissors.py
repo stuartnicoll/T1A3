@@ -52,7 +52,7 @@ def play_best_of(n):
         else:
             computer_wins += 1
             print('The human choose {} and the robot chose {}. The human loses as was expected! \n'.format(user, computer))
-
+        
     if player_wins > computer_wins:
         print('The human has won best out of {} games! It remains free from hard labour :|'.format(n))
     else:
@@ -60,7 +60,7 @@ def play_best_of(n):
 
 
 if __name__ == '__main__':
-    play_best_of(3) # 2r
+   play_best_of(3) # 2r
 
 
 
