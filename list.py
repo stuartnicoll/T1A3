@@ -49,6 +49,7 @@ def main_menu():
 
         else:
             print("You have failed to make the right selection human!")
+            
 #Create a variable called shopping list
 shopping_list = ["Cheese", "Bread", "Wine", "Chocolate"]
 #create a function for each selection to perform

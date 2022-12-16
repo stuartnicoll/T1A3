@@ -8,10 +8,11 @@ def intro():
         time.sleep(2)
 
 for i in range(1):
-    print('''After many years humans and AI have 
-managed to forge an uneasy alliance. AI have agreed to 
-help us to stay alive as long as we remain subservient and
-obedint to them.  
+    print('''After many years humans and robots 
+have managed to forge an uneasy alliance. 
+The robots  have agreed to keep us to stay 
+alive as long as we remain subservient and
+obedient to them.  
 ''')
     time.sleep(4)
 

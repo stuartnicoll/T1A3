@@ -18,7 +18,7 @@ from paper_rock_scissors import play_best_of
 
 play_best_of(3)
 
-#system('clear')
+system('clear')
 
 print()
 print("Thank you for playing a game with me human. You have earn't yourself a treat!\n")
