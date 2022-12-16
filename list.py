@@ -67,9 +67,10 @@ def add_item():
 def remove_item():
     item = input ("Enter the item you wish to remove from the shopping list. ")
     shopping_list.remove(item)
-    print()
-    print(item+ " has been removed from the list. It's easier for you now!")
-
+    if input!= shopping_list:
+        print(item+ " You have selected an item which is not on the list.")
+    else:
+        print("has been removed from the list. It's easier for you now!")
 
 def check_item():
     item = input ("Which item would you like to check on the shopping list?")
