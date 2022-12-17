@@ -43,7 +43,6 @@ def main_menu():
             clear_list()
         
         elif selection == "7":
-            #system('clear')
             print("You are done with me human!")
             break
 
