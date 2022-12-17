@@ -59,8 +59,7 @@ def play_best_of(n):
         print('Unfortunately for you the robot has won the best of {} games. Time to go to the pit! :)'.format(n))
 
 
-if __name__ == '__main__':
-   play_best_of(3) # 2r
+
 
 
 
