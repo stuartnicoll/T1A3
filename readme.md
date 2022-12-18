@@ -1,7 +1,10 @@
 # T1A3 - Terminal App Assignment
 ## Stuart NIcoll
 
-[My github link](https://github.com/stuartnicoll/T1A3)
+[My github link](https://github.com/stuartnicoll/T1A3)  
+[Youtube video](https://www.youtube.com/watch?v=ONEziKhZSCQ)
+
+
 
 __Overview__
 
