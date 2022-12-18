@@ -58,17 +58,14 @@ def display_list():
         print("* " + i)
 
 def add_item():
-    item = input ("Enter item to add to shopping list: ")
+    item = input ("Enter item to add to shopping list: ").capitalize()
     shopping_list.append(item)
     print (item+ " has been added to the shopping list. Now there's more to carry human")
 
 def remove_item():
-    item = input ("Enter the item you wish to remove from the shopping list. ")
+    item = input ("Enter the item you wish to remove from the shopping list.").capitalize()
     shopping_list.remove(item)
-    if input!= shopping_list:
-        print(item+ " You have selected an item which is not on the list.")
-    else:
-        print("has been removed from the list. It's easier for you now!")
+    print(item+ " has been removed from the list. It's easier for you now!")
 
 def check_item():
     item = input ("Which item would you like to check on the shopping list?")

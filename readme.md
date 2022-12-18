@@ -146,7 +146,7 @@ which was based on the user selecting a number from the menu.
         5.How many items do you have to carry
         6.Remove all the contents
         7.Exit
-        ''')
+    
         selection = input("Make your choice human: ")
 ```
 
@@ -224,3 +224,120 @@ def clear_list():
 This now feeds into the paper, rock, scissors game.  
 
 __Paper, Rock, Scissors.__
+
+With the papar, rock, scissors game (PRS) I import both the math module and the random modules. I then defined a function with the user input choosing between p,r and s. this was the player value and then in the same function the computers choice was set using the random function.
+
+```
+    import random
+import math 
+
+def play():
+    user = input("What's your choice? 'r' for rock, 'p' for paper, 's' for scissors\n")
+    user = user.lower()
+
+    computer = random.choice(['r', 'p', 's'])
+
+    if user == computer:
+        return (0, user, computer)
+
+    # r > s, s > p, p > r
+    if is_win(user, computer):
+        return (1, user, computer)
+
+    return (-1, user, computer)
+```
+
+After this I set up a control flow statement to set the conditions of the game. This returns true when the user beats the robot.
+
+```
+def is_win(player, opponent):
+    if (player == 'r' and opponent == 's') | (player == 's' and opponent == 'p') or (player == 'p' and opponent == 'r'):
+        return True
+    return False
+```
+In the next block of code I set up another set of conditions designed to make the game best of 3. This function uses the math function ceil(n/2)to control this.
+```
+    def play_best_of(n):
+    # play against the robot until someone wins best of n games
+    # to win, you must win ceil(n/2) games (ie 2/3, 3/5, 4/7)
+    player_wins = 0
+    computer_wins = 0
+    wins_necessary = math.ceil(n/2)
+    while player_wins < wins_necessary and computer_wins < wins_necessary:
+        result, user, computer = play()
+        #if tied
+        if result == 0:
+            print('The robot and the human have tied for {}. \n'.format(user))
+        # Human wins
+        elif result == 1:
+            player_wins += 1
+            print('The human chose {} and the robot chose {}. The human wins!\n'.format(user, computer))
+        #Robot wins
+        else:
+            computer_wins += 1
+            print('The human choose {} and the robot chose {}. The human loses as was expected! \n'.format(user, computer))
+        
+    if player_wins > computer_wins:
+        print('The human has won best out of {} games! It remains free from hard labour :|'.format(n))
+    else:
+        print('Unfortunately for you the robot has won the best of {} games. Time to go to the pit! :)'.format(n
+```
+
+__The final piece of cake__
+
+This block of code is made from a match case and simply gives the user a choice of 'desert block' I felt it was a nice way to wrap up the interaction with the robot. After the choice is made there is a message back to the user from the robot for each choice and then a goodbye message is added.
+
+def desert():  
+
+    desert_choice = input("Please choose the Yellow , Blue or Green desert block: ").lower()
+    
+    match desert_choice:
+        case "yellow":
+            print()
+            print("You have choosen a yummy treat human!\n")
+
+        case "blue":
+            print()
+            print("Blue is the most delicious snack human.\n")
+
+        case "green":
+            print()
+            print("You have choosen poorly human! Soylent Green is people.....Soylent green is made from people!\n")
+
+        case _:
+            print()
+            print("You have entered incorrectly human,now you get nothing.\n")
+
+    print("Until we meet again human!\n ")      
+#Escape from program with leaving message.
+
+
+desert()
+
+## Testing
+
+I included two tests that looked at print output. One for the intro file and one for the main file. Both came back at 100% pass.
+
+Test 1
+
+```
+import time
+
+def test():
+    for i in range(1):
+        print("Welcome to the Robomart\n")
+        print("The ultimate robot overlord shopping list experience!")
+        time.sleep(3)
+
+```
+
+Test 2
+
+```
+def test():
+    print("Thank you human please come again.")
+
+
+    def test_method():
+        assert test () == ("Thank you human please come again.")
+```
